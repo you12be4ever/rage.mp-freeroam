@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/n-n1ks/rage.mp-freeroam#readme",
   "dependencies": {
-    "eslint": "^4.6.1"
+    "eslint": "^4.19.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/ragemp-c": "github:CocaColaBear/types-ragemp-c#master",
+    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s#master"
   }
 }

@@ -1,3 +1,4 @@
+//Comment
 mp.events.addCommand('veh', (player, _, vehName) => {
     if (vehName && vehName.trim().length > 0) {
         let pos = player.position;
@@ -7,7 +8,7 @@ mp.events.addCommand('veh', (player, _, vehName) => {
             player.customData.vehicle.repair();
             player.customData.vehicle.position = pos;
             player.customData.vehicle.model = mp.joaat(vehName);
-        // Else - create new vehicle.
+            // Else - create new vehicle.
         } else {
             player.customData.vehicle = mp.vehicles.new(mp.joaat(vehName), pos);
         }
@@ -73,9 +74,9 @@ mp.events.addCommand('warp', (player, _, playerID) => {
         player.outputChatBox(`<b>Command syntax:</b> /warp [player_id]`);
 });
 
-mp.events.addCommand('tp', (player, _, x, y ,z) => {
+mp.events.addCommand('tp', (player, _, x, y, z) => {
     if (!isNaN(parseFloat(x)) && !isNaN(parseFloat(y)) && !isNaN(parseFloat(z)))
-        player.position = new mp.Vector3(parseFloat(x),parseFloat(y),parseFloat(z));
+        player.position = new mp.Vector3(parseFloat(x), parseFloat(y), parseFloat(z));
     else
         player.outputChatBox(`<b>Command syntax:</b> /tp [x] [y] [z]`);
 });
