@@ -1,4 +1,4 @@
-// Init events.
-require('./events.js');
+let gg = new Object({});
+
 // Init commands.
 require('./commands.js');
