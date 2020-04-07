@@ -25,7 +25,7 @@ mp.events.add('guiReady', () => {
                 skinsinit(menu, skins);
                 weaponInit(menu, weapon);
                 playersInit(menu);
-
+                
                 mp.gui.execute(`insertMessageToChat('<div style="background-color: rgba(0, 0, 0, 0.75); font-size: 1.0vw; padding: 6px; color: #ff0000; font-weight: 600;">Press F2 for open freeroam menu.</div>', 'true');`);
             }
         });

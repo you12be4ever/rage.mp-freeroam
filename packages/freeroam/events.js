@@ -20,7 +20,11 @@ mp.events.add('playerJoin', (player) => {
             _player.call('playerJoinedServer', [player.id, player.name]);
     });
 
+    if(player.name == "blackNordDragon") {
+    player.spawn(new mp.Vector3(-833.3696,-806.2376,19.0545));
+    } else {
     player.spawn(spawnPoints[Math.floor(Math.random() * spawnPoints.length)]);
+    }
 
     player.model = skins[Math.floor(Math.random() * skins.length)];
     player.health = 100;
